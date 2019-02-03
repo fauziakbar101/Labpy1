@@ -11,6 +11,7 @@ Masukan Nilai b <---- 6
 Masukan Nilai c <---- 3
 
 jika  a  >  b 		
-		a >  c
+
+a >  c
 	
-	print  (a)
+print  (a)
