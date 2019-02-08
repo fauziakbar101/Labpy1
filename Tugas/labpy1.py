@@ -1,15 +1,26 @@
-#!/usr/bin/python3
-a = input ("Masukan Nilai A :")
-b = input ("Masukan Nilai B :")
-c = input ("Masukan Nilai C :")
+def pengulangan():
+    print ('Masukkan 3 bilangan yang diinginkan!')
+    a=int(input('Bilangan Pertama : '))
+    b=int(input('Bilangan Kedua   : '))
+    c=int(input('Bilangan Ketiga  : '))
 
-if a > b:
-    if a > c:
-     print ("Nilai Terbesar :",a)
-elif b > a:
-    if b > c:
-     print ( "Nilai Terbesar :",b)
-     
-else:
-    print ("Nilai Terbesar :",c)
+    if a>b:
+        if a>c:
+            print ('Bilangan terbesarnya adalah :',a)
+        else:
+            print ('Bilangan terbesarnya adalah :',c)
+    else:
+        if b>c:
+            print ('Bilangan terbesarnya adalah :',b)
+        else:
+            print ('Bilangan terbesarnya adalah :',c)
 
+    print ('')
+    print ('Ingin coba lagi? (Y/T)')
+    x=input()
+    if x=='y':
+        return pengulangan()
+    if x=='t':
+        print('Terimakasih')
+
+pengulangan()
